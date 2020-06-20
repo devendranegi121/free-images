@@ -1,0 +1,116 @@
+.inline  .dropdown-item{display: inline-block; width: auto; padding: 3px 15px 3px 0px; font-size: 14px;}
+.col-md-4{width: 1000px;}
+[class*="mt"]{width: 100%;}
+
+.sr-only{height: 0px; width: 0px; padding: 0px; margin: 0px; position: absolute; z-index: -1;}
+
+ 
+
+ 
+.user_by{
+    position: absolute;
+    bottom: 5px;
+    left:5px;
+    padding: 5px 10px;
+    font-size:13px;
+    background-color: rgba(0,0,0,.5);
+    color: #fff; display: none;
+}
+.textc{
+    color:#fff;
+    background-color: rgba(0, 0, 0, .3);
+    padding: 20px; margin: auto;
+}
+.searchbg{
+    min-height: 100vh; background-size: cover; display: flex; align-items: center; background-position: center bottom;
+    
+    background-image: url('./img/banner.jpg');
+}
+
+.searchbginner{background-color: aliceblue;}
+.textinner{
+    padding: 20px; text-align: center;
+}
+.lginput{
+    min-width: 400px;
+}
+.page-footer{background-color: black; color:#fff}
+.page-footer a{color: #fff;}
+.imageGrid li:hover .downloadlink, .imageGrid li:hover .user_by{display: block;}
+.downloadlink{
+    position: absolute;
+    bottom: 5px;
+    right:5px;
+    padding: 5px 10px;
+    font-size:13px;
+    background-color: rgba(0,0,0,.5);
+    color: #fff; display: none;
+}
+.full-width{width: 100%;}
+.license_details tr td:first-child{
+    color:green;
+}
+
+.license_details.do_not tr td:first-child{
+    color:red;
+}
+ 
+
+.imageGrid {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;;
+}
+
+.imageGrid li {
+  height: 40vh;
+  flex-grow: 1; padding: 3px; position: relative;
+}
+
+.imageGrid li:last-child {
+  
+  flex-grow: 10;
+}
+
+.imageGrid img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+ 
+@media (max-aspect-ratio: 1/1) {
+  .imageGrid li {
+    height: 30vh;
+  }
+}
+
+ 
+
+@media (max-height: 480px) {
+  .imageGrid li {
+    height: 80vh;
+  }
+}
+ 
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  .imageGrid {
+    flex-direction: row;
+  }
+
+  .imageGrid li {
+    height: auto;
+    width: 100%;
+  }
+  .imageGrid img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;  
+  }
+}
+
+
